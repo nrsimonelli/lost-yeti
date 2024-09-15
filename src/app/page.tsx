@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import yeti from '@/assets/yeti.png'
+import yeti from '@/assets/lost-yeti-full.png'
 
 export default function Home() {
   return (
