@@ -15,7 +15,15 @@ import callout from '@/assets/dial-up.png'
 import footer from '@/assets/footer.png'
 import nav from '@/assets/nav-logo.png'
 
+import { Rubik } from 'next/font/google'
+
 import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+
+const rubik = Rubik({
+  subsets: ['latin'],
+  variable: '--font-rubik',
+})
 
 export default function Home() {
   return (
@@ -26,10 +34,14 @@ export default function Home() {
           <Button>contact us</Button>
         </div>
       </nav>
-      <section>
-        <div>
-          <h1>Step into our office...</h1>
-          <p>
+      <section className='w-full'>
+        <div className='mx-auto'>
+          <h1
+            className={cn('~text-5xl/7xl font-bold font-rubik', rubik.variable)}
+          >
+            Step into our office...
+          </h1>
+          <p className='~text-lg/2xl'>
             Lost Yeti is here to help you find your way in the world of web
             development
           </p>
@@ -37,22 +49,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-primary text-primary-foreground'>
-        <div>
-          <h2>What we do</h2>
-          <p>
+      <section className='w-full bg-primary text-primary-foreground'>
+        <div className='mx-auto'>
+          <h2 className='font-bold ~text-[2rem]/[3rem]'>What we do</h2>
+          <p className='~text-lg/2xl'>
             We are a two person team focused on helping small businesses with
             their UX and development needs.
           </p>
-          <p>
+          <p className='~text-lg/2xl'>
             Whether you are looking for direction on your current site, or you
             need to create something completely new, Lost Yeti Design Company is
             here to help you on your journey.
           </p>
           <div>
             <Image alt={''} src={ux} width={320} height={355} />
-            <h3>UX design</h3>
-            <p>
+            <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UX design</h3>
+            <p className='~text-lg/2xl'>
               From design audits and user testing to full development ready
               mock-ups, our UX designer is ready to help your business put it’s
               best foot forward.
@@ -60,8 +72,8 @@ export default function Home() {
           </div>
           <div>
             <Image alt={''} src={ui} width={320} height={355} />
-            <h3>UI development</h3>
-            <p>
+            <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UI development</h3>
+            <p className='~text-lg/2xl'>
               From design audits and user testing to full development ready
               mock-ups, our UX designer is ready to help your business put it’s
               best foot forward.
@@ -70,11 +82,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div>
+      <section className='w-full'>
+        <div className='mx-auto'>
           <div>
-            <h2>Need help finding your way?</h2>
-            <p>
+            <h2 className='font-bold ~text-[2rem]/[3rem]'>
+              Need help finding your way?
+            </h2>
+            <p className='~text-lg/2xl'>
               Reach out to us using the contact form and we can help create
               custom road map to get you were you need to go!
             </p>
@@ -86,11 +100,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-secondary text-secondary-foreground'>
-        <div>
+      <section className='w-full bg-secondary text-secondary-foreground'>
+        <div className='mx-auto'>
           <div>
-            <h3>Services</h3>
-            <p>
+            <h2 className='font-bold ~text-[2rem]/[3rem]'>Services</h2>
+            <p className='~text-lg/2xl'>
               Whether you just need to fix a small bug or you need an entire
               website made from scratch- we can help!
             </p>
@@ -98,20 +112,26 @@ export default function Home() {
           <div>
             <div>
               <Image src={service1} alt={''} height={262} width={250} />
-              <h4>Consulting + User testing</h4>
+              <h4 className='font-bold ~text-lg/2xl'>
+                Consulting + User testing
+              </h4>
             </div>
             <div>
               <Image src={service2} alt={''} height={262} width={250} />
-              <h4>Feature addtion + Re-design</h4>
+              <h4 className='font-bold ~text-lg/2xl'>
+                Feature addtion + Re-design
+              </h4>
             </div>
             <div>
               <Image src={service3} alt={''} height={262} width={250} />
-              <h4>Concept to coompletion</h4>
+              <h4 className='font-bold ~text-lg/2xl'>Concept to coompletion</h4>
             </div>
           </div>
           <div>
-            <h3>We love hearing from users!</h3>
-            <p>
+            <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
+              We love hearing from users!
+            </h3>
+            <p className='~text-lg/2xl'>
               Feedback from users is one of the best ways to ensure your product
               is working how it needs to. User testing and research can be added
               to any step of our design and development journey, especially in
@@ -122,19 +142,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-accent text-accent-foreground'>
-        <div>
-          <h2>Our work</h2>
-          <p>Check out some past projects!</p>
+      <section className='w-full bg-accent text-accent-foreground'>
+        <div className='mx-auto'>
+          <h2 className='font-bold ~text-[2rem]/[3rem]'>Our work</h2>
+          <p className='~text-lg/2xl'>Check out some past projects!</p>
 
           <div>
             <div>
               <Image src={work1} alt={''} height={456} width={550} />
               <div>
                 {/* overline styles here */}
-                <p className=''>Re-design + sign-up optimzation</p>
-                <h3>Gamepoint Performance</h3>
-                <p>
+                <p className='uppercase font-light ~text-sm/base'>
+                  Re-design + sign-up optimzation
+                </p>
+                <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
+                  Gamepoint Performance
+                </h3>
+                <p className='~text-lg/2xl'>
                   We re-designed their entire site with a focus on helping them
                   get more sign-ups. Our biggest feature addition was a sign-up
                   form that was automised to make the sign up process easier for
@@ -146,9 +170,13 @@ export default function Home() {
               <Image src={work2} alt={''} height={456} width={550} />
               <div>
                 {/* overline styles here */}
-                <p className=''>Full site construction</p>
-                <h3>Lugghead’s Lazer Lab</h3>
-                <p>
+                <p className='uppercase font-light ~text-sm/base'>
+                  Full site construction
+                </p>
+                <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
+                  Lugghead’s Lazer Lab
+                </h3>
+                <p className='~text-lg/2xl'>
                   We helped a small photographer bring their website to life to
                   not only show off their work, but help give customers a way to
                   contact them.
@@ -159,9 +187,13 @@ export default function Home() {
               <Image src={work3} alt={''} height={456} width={550} />
               <div>
                 {/* overline styles here */}
-                <p className=''>Interactive feature design </p>
-                <h3>Minneapolis Winter League</h3>
-                <p>
+                <p className='uppercase font-light ~text-sm/base'>
+                  Interactive feature design{' '}
+                </p>
+                <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
+                  Minneapolis Winter League
+                </h3>
+                <p className='~text-lg/2xl'>
                   A local sports league needed a feature rich website to help
                   players sign-up, report scores, and keep track of standings.
                   We were excited to help them build a website that fit their
@@ -172,9 +204,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className='w-full'>
         {/* call out card */}
-        <div>
+        <div className='mx-auto'>
           <div>
             <p>LOST YETI</p>
             {/* THREE BARS EHRE */}
@@ -191,8 +223,10 @@ export default function Home() {
               <Image src={callout} alt={''} height={162} width={416} />
             </div>
             <div>
-              <h3>Want to work with us?</h3>
-              <p>
+              <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
+                Want to work with us?
+              </h3>
+              <p className='~text-lg/2xl'>
                 Start by telling us about you vision, and together we&apos;ll
                 create a custom proposal that works for your needs.
               </p>
