@@ -5,15 +5,15 @@
 @layer base {
   :root {
     --background: 0 0% 98%;
-    --foreground: 204 33% 16%;
+    --foreground: 0 0% 11%;
 
     --card: 0 0% 98%;
-    --card-foreground: 204 33% 16%;
+    --card-foreground: 0 0% 11%;
 
     --popover: 0 0% 98%;
-    --popover-foreground: 204 33% 16%;
+    --popover-foreground: 0 0% 11%;
 
-    --primary: 236 25% 47%;
+    --primary: 236 25% 44%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 181 80% 24%;
@@ -22,15 +22,15 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 175 61% 70%;
-    --accent-foreground: 204 33% 16%;
+    --accent: 183 74% 83%;
+    --accent-foreground: 0 0% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 204 33% 16%;
+    --ring: 0 0% 11%;
     --radius: 0.5rem;
 
     --chart-1: 12 76% 61%;
@@ -41,14 +41,14 @@
   }
 
   .dark {
-    --background: 204 33% 16%;
+    --background: 0 0% 11%;
     --foreground: 0 0% 98%;
-    --card: 204 33% 16%;
+    --card: 0 0% 11%;
     --card-foreground: 0 0% 98%;
-    --popover: 204 33% 16%;
+    --popover: 0 0% 11%;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
-    --primary-foreground: 236 25% 47%;
+    --primary-foreground: 236 25% 44%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 0 0% 98%;
     --muted: 217.2 32.6% 17.5%;
@@ -74,5 +74,19 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1 + p,
+  h2 + p,
+  h3 + p {
+    @apply mt-4;
+  }
+  p + p {
+    @apply mt-2;
+  }
+  section + section {
+    @apply ~py-8/16;
+  }
+  section > div {
+    @apply max-w-screen-lg;
   }
 }
