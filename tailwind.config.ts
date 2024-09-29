@@ -1,14 +1,18 @@
 import { fontFamily } from 'tailwindcss/defaultTheme'
+import fluid, { extract, fontSize, screens } from 'fluid-tailwind'
 
 import type { Config } from 'tailwindcss'
 const config = {
   darkMode: ['class'],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
+  content: {
+    files: [
+      './pages/**/*.{ts,tsx}',
+      './components/**/*.{ts,tsx}',
+      './app/**/*.{ts,tsx}',
+      './src/**/*.{ts,tsx}',
+    ],
+    extract,
+  },
   prefix: '',
   theme: {
     container: {
@@ -18,9 +22,12 @@ const config = {
         '2xl': '1400px',
       },
     },
+    fontSize,
+    screens,
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
+        rubik: ['var(--font-rubik)', ...fontFamily.sans],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -78,7 +85,7 @@ const config = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), fluid],
 } satisfies Config
 
 export default config
