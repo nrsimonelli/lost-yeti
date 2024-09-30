@@ -75,18 +75,23 @@
   body {
     @apply bg-background text-foreground;
   }
-  h1 + p,
-  h2 + p,
-  h3 + p {
+  /* .flow > h1 + p,
+  .flow > h2 + p,
+  .flow > h3 + p {
     @apply mt-4;
-  }
-  p + p {
+  } */
+  /* .flow > p + p {
     @apply mt-2;
-  }
-  section + section {
+  } */
+  /* section + section {
     @apply ~py-8/16;
-  }
+  } */
   section > div {
-    @apply max-w-screen-lg;
+    @apply max-w-screen-lg border;
+  }
+  main > * + * {
+    @apply ~py-16/40;
   }
 }
+
+/* section spacting 64 -> 160 */

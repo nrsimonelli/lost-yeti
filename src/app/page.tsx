@@ -35,13 +35,13 @@ export default function Home() {
         </div>
       </nav>
       <section className='w-full'>
-        <div className='mx-auto'>
+        <div className='mx-auto flow'>
           <h1
             className={cn('~text-5xl/7xl font-bold font-rubik', rubik.variable)}
           >
             Step into our office...
           </h1>
-          <p className='~text-lg/2xl'>
+          <p className='~text-lg/2xl ~mt-4/8'>
             Lost Yeti is here to help you find your way in the world of web
             development
           </p>
@@ -50,9 +50,9 @@ export default function Home() {
       </section>
 
       <section className='w-full bg-primary text-primary-foreground'>
-        <div className='mx-auto'>
+        <div className='mx-auto flow'>
           <h2 className='font-bold ~text-[2rem]/[3rem]'>What we do</h2>
-          <p className='~text-lg/2xl'>
+          <p className='~text-lg/2xl ~mt-2/4'>
             We are a two person team focused on helping small businesses with
             their UX and development needs.
           </p>
@@ -61,23 +61,27 @@ export default function Home() {
             need to create something completely new, Lost Yeti Design Company is
             here to help you on your journey.
           </p>
-          <div>
-            <Image alt={''} src={ux} width={320} height={355} />
-            <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UX design</h3>
-            <p className='~text-lg/2xl'>
-              From design audits and user testing to full development ready
-              mock-ups, our UX designer is ready to help your business put it’s
-              best foot forward.
-            </p>
-          </div>
-          <div>
-            <Image alt={''} src={ui} width={320} height={355} />
-            <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UI development</h3>
-            <p className='~text-lg/2xl'>
-              From design audits and user testing to full development ready
-              mock-ups, our UX designer is ready to help your business put it’s
-              best foot forward.
-            </p>
+          <div className='flex flex-col md:space-y-0 space-y-16 md:space-x-16 md:flex-row items-center md:justify-center mt-16'>
+            <div className='border flow max-w-[364px]'>
+              <Image alt={''} src={ux} width={320} height={355} />
+              <h3 className='font-bold ~text-[1.5rem]/[2rem] '>UX design</h3>
+              <p className='~text-lg/2xl ~mt-2/4'>
+                From design audits and user testing to full development ready
+                mock-ups, our UX designer is ready to help your business put
+                it’s best foot forward.
+              </p>
+            </div>
+            <div className='flow border max-w-[364px]'>
+              <Image alt={''} src={ui} width={320} height={355} />
+              <h3 className='font-bold ~text-[1.5rem]/[2rem] '>
+                UI development
+              </h3>
+              <p className='~text-lg/2xl ~mt-2/4'>
+                From design audits and user testing to full development ready
+                mock-ups, our UX designer is ready to help your business put
+                it’s best foot forward.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -88,7 +92,7 @@ export default function Home() {
             <h2 className='font-bold ~text-[2rem]/[3rem]'>
               Need help finding your way?
             </h2>
-            <p className='~text-lg/2xl'>
+            <p className='~text-lg/2xl ~mt-2/4'>
               Reach out to us using the contact form and we can help create
               custom road map to get you were you need to go!
             </p>
@@ -104,34 +108,36 @@ export default function Home() {
         <div className='mx-auto'>
           <div>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>Services</h2>
-            <p className='~text-lg/2xl'>
+            <p className='~text-lg/2xl ~mt-2/4'>
               Whether you just need to fix a small bug or you need an entire
-              website made from scratch- we can help!
+              website made from scratch--we can help!
             </p>
           </div>
-          <div>
-            <div>
+          <div className='flex-col ~my-8/16 flex md:items-start items-center justify-center md:flex-row flex-wrap ~gap-8/16 *:border'>
+            <div className='max-w-[250px]'>
               <Image src={service1} alt={''} height={262} width={250} />
-              <h4 className='font-bold ~text-lg/2xl'>
+              <h4 className='text-center font-bold ~text-lg/2xl ~mt-2/4'>
                 Consulting + User testing
               </h4>
             </div>
-            <div>
+            <div className='max-w-[250px]'>
               <Image src={service2} alt={''} height={262} width={250} />
-              <h4 className='font-bold ~text-lg/2xl'>
+              <h4 className='text-center font-bold ~text-lg/2xl ~mt-2/4'>
                 Feature addtion + Re-design
               </h4>
             </div>
-            <div>
+            <div className='max-w-[250px]'>
               <Image src={service3} alt={''} height={262} width={250} />
-              <h4 className='font-bold ~text-lg/2xl'>Concept to coompletion</h4>
+              <h4 className='text-center font-bold ~text-lg/2xl ~mt-2/4'>
+                Concept to completion
+              </h4>
             </div>
           </div>
           <div>
             <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
               We love hearing from users!
             </h3>
-            <p className='~text-lg/2xl'>
+            <p className='~text-lg/2xl ~mt-2/4'>
               Feedback from users is one of the best ways to ensure your product
               is working how it needs to. User testing and research can be added
               to any step of our design and development journey, especially in
@@ -145,7 +151,7 @@ export default function Home() {
       <section className='w-full bg-accent text-accent-foreground'>
         <div className='mx-auto'>
           <h2 className='font-bold ~text-[2rem]/[3rem]'>Our work</h2>
-          <p className='~text-lg/2xl'>Check out some past projects!</p>
+          <p className='~text-lg/2xl ~mt-2/4'>Check out some past projects!</p>
 
           <div>
             <div>
@@ -158,7 +164,7 @@ export default function Home() {
                 <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
                   Gamepoint Performance
                 </h3>
-                <p className='~text-lg/2xl'>
+                <p className='~text-lg/2xl ~mt-2/4'>
                   We re-designed their entire site with a focus on helping them
                   get more sign-ups. Our biggest feature addition was a sign-up
                   form that was automised to make the sign up process easier for
@@ -176,7 +182,7 @@ export default function Home() {
                 <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
                   Lugghead’s Lazer Lab
                 </h3>
-                <p className='~text-lg/2xl'>
+                <p className='~text-lg/2xl ~mt-2/4'>
                   We helped a small photographer bring their website to life to
                   not only show off their work, but help give customers a way to
                   contact them.
@@ -193,7 +199,7 @@ export default function Home() {
                 <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
                   Minneapolis Winter League
                 </h3>
-                <p className='~text-lg/2xl'>
+                <p className='~text-lg/2xl ~mt-2/4'>
                   A local sports league needed a feature rich website to help
                   players sign-up, report scores, and keep track of standings.
                   We were excited to help them build a website that fit their
@@ -226,7 +232,7 @@ export default function Home() {
               <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
                 Want to work with us?
               </h3>
-              <p className='~text-lg/2xl'>
+              <p className='~text-lg/2xl ~mt-2/4'>
                 Start by telling us about you vision, and together we&apos;ll
                 create a custom proposal that works for your needs.
               </p>
