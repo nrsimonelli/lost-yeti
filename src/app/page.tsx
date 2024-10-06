@@ -28,29 +28,35 @@ const rubik = Rubik({
 export default function Home() {
   return (
     <main className='flex flex-col items-center'>
-      <nav>
-        <div>
-          <Image src={nav} alt={''} height={62} width={200} />
-          <Button>contact us</Button>
-        </div>
+      <nav className='border w-full items-center justify-between inline-flex px-4'>
+        <Image src={nav} alt={''} height={62} width={200} />
+        <Button variant={'cta'} className='px-8 h-10'>
+          contact us
+        </Button>
       </nav>
-      <section className='w-full'>
-        <div className='mx-auto flow'>
-          <h1
-            className={cn('~text-5xl/7xl font-bold font-rubik', rubik.variable)}
-          >
-            Step into our office...
-          </h1>
-          <p className='~text-lg/2xl ~mt-4/8'>
-            Lost Yeti is here to help you find your way in the world of web
-            development
-          </p>
+      <section className='w-full px-4'>
+        <div className='mx-auto flex flex-col'>
+          <div className='py-8 px-4'>
+            <h1
+              className={cn(
+                '~text-5xl/7xl font-bold font-rubik',
+                rubik.variable
+              )}
+            >
+              Step into our office...
+            </h1>
+            <p className='~text-lg/2xl ~mt-4/8'>
+              Lost Yeti is here to help you find your way in the world of web
+              development
+            </p>
+          </div>
+
           <Image alt={''} src={hero} width={600} height={650} />
         </div>
       </section>
 
-      <section className='w-full bg-primary text-primary-foreground'>
-        <div className='mx-auto flow'>
+      <section className='w-full bg-primary text-primary-foreground px-4'>
+        <div className='mx-auto '>
           <h2 className='font-bold ~text-[2rem]/[3rem]'>What we do</h2>
           <p className='~text-lg/2xl ~mt-2/4'>
             We are a two person team focused on helping small businesses with
@@ -62,17 +68,17 @@ export default function Home() {
             here to help you on your journey.
           </p>
           <div className='flex flex-col md:space-y-0 space-y-16 md:space-x-16 md:flex-row items-center md:justify-center mt-16'>
-            <div className='border flow max-w-[364px]'>
+            <div className='border  max-w-[364px]'>
               <Image alt={''} src={ux} width={320} height={355} />
-              <h3 className='font-bold ~text-[1.5rem]/[2rem] '>UX design</h3>
+              <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UX design</h3>
               <p className='~text-lg/2xl ~mt-2/4'>
                 From design audits and user testing to full development ready
                 mock-ups, our UX designer is ready to help your business put
                 it’s best foot forward.
               </p>
             </div>
-            <div className='flow border max-w-[364px]'>
-              <Image alt={''} src={ui} width={320} height={355} />
+            <div className='border max-w-[364px]'>
+              <Image alt={''} src={ui} width={324} height={355} />
               <h3 className='font-bold ~text-[1.5rem]/[2rem] '>
                 UI development
               </h3>
@@ -86,7 +92,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full'>
+      <section className='w-full px-4'>
         <div className='mx-auto'>
           <div>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>
@@ -96,7 +102,9 @@ export default function Home() {
               Reach out to us using the contact form and we can help create
               custom road map to get you were you need to go!
             </p>
-            <Button>contact us</Button>
+            <Button variant={'cta'} className='px-8 h-10'>
+              contact us
+            </Button>
           </div>
           <div>
             <Image alt={''} src={computer} width={454} height={500} />
@@ -104,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full bg-secondary text-secondary-foreground'>
+      <section className='w-full bg-secondary text-secondary-foreground px-4'>
         <div className='mx-auto'>
           <div>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>Services</h2>
@@ -148,7 +156,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full bg-accent text-accent-foreground'>
+      <section className='w-full bg-accent text-accent-foreground px-4'>
         <div className='mx-auto'>
           <h2 className='font-bold ~text-[2rem]/[3rem]'>Our work</h2>
           <p className='~text-lg/2xl ~mt-2/4'>Check out some past projects!</p>
@@ -210,7 +218,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='w-full'>
+      <section className='w-full px-4'>
         {/* call out card */}
         <div className='mx-auto'>
           <div>
@@ -236,7 +244,9 @@ export default function Home() {
                 Start by telling us about you vision, and together we&apos;ll
                 create a custom proposal that works for your needs.
               </p>
-              <Button>Contact us</Button>
+              <Button variant={'cta'} className='px-8 h-10'>
+                Contact us
+              </Button>
             </div>
           </div>
         </div>
@@ -249,7 +259,9 @@ export default function Home() {
           <p>
             Contact us: <a>lostyetidesignco@gmail.com</a>
           </p>
-          <Button>contact us</Button>
+          <Button variant={'cta'} className='px-8 h-10'>
+            contact us
+          </Button>
         </div>
       </footer>
     </main>
