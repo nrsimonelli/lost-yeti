@@ -237,9 +237,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='w-full px-4'>
+      <section className='w-full px-4 bg-accent text-accent-foreground'>
         {/* call out card */}
-        <div className='mx-auto p-4 shadow-callout rounded-2xl'>
+        <div className='mx-auto p-4 shadow-callout rounded-2xl bg-background text-foreground'>
           <div className='inline-flex w-full gap-4 items-center'>
             <p className='font-bold'>LOST YETI</p>
             {/* THREE BARS EHRE */}
