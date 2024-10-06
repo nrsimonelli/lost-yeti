@@ -16,6 +16,7 @@ import footer from '@/assets/footer.png'
 import nav from '@/assets/nav-logo.png'
 
 import { Rubik } from 'next/font/google'
+import { CrossCircledIcon } from '@radix-ui/react-icons'
 
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -238,23 +239,23 @@ export default function Home() {
       </section>
       <section className='w-full px-4'>
         {/* call out card */}
-        <div className='mx-auto'>
-          <div>
-            <p>LOST YETI</p>
+        <div className='mx-auto p-4 shadow-callout rounded-2xl'>
+          <div className='inline-flex w-full gap-4 items-center'>
+            <p className='font-bold'>LOST YETI</p>
             {/* THREE BARS EHRE */}
-            <div>
-              <span />
-              <span />
-              <span />
+            <div className='w-full flex flex-col flex-1 space-y-1'>
+              <span className='h-px w-full bg-[hsl(0,0,67%)]' />
+              <span className='h-px w-full bg-[hsl(0,0,67%)]' />
+              <span className='h-px w-full bg-[hsl(0,0,67%)]' />
             </div>
             {/* CLOSE BUTTON */}
-            <div>X</div>
+            <CrossCircledIcon className='w-7 h-7 text-foreground' />
           </div>
-          <div>
-            <div>
+          <div className='border border-foreground rounded-2xl flex flex-row flex-wrap items-stretch justify-center overflow-clip mt-1 min-h-[300px] h-full'>
+            <div className='flex-1 basis-[300px] bg-[hsl(232,100,93%)] p-4 flex flex-col items-center justify-center'>
               <Image src={callout} alt={''} height={162} width={416} />
             </div>
-            <div>
+            <div className='flex-1 basis-[300px] ~p-4/8 flex-col flex md:items-start items-center justify-center'>
               <h3 className='font-bold ~text-[1.5rem]/[2rem]'>
                 Want to work with us?
               </h3>
@@ -262,7 +263,7 @@ export default function Home() {
                 Start by telling us about you vision, and together we&apos;ll
                 create a custom proposal that works for your needs.
               </p>
-              <Button variant={'cta'} className='px-8 h-10'>
+              <Button variant={'cta'} className='px-8 h-10 ~mt-4/8'>
                 Contact us
               </Button>
             </div>

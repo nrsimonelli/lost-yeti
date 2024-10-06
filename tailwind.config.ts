@@ -70,7 +70,8 @@ const config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       boxShadow: {
-        cta: 'inset -4px -4px 2px 0px rgba(12, 9, 13, 30%);',
+        cta: 'inset -4px -4px 2px 0px rgba(12, 9, 13, 30%)',
+        callout: '-4px 4px 0px 0px #1c2d38',
       },
       keyframes: {
         'accordion-down': {
