@@ -56,33 +56,33 @@ export default function Home() {
       </section>
 
       <section className='w-full bg-primary text-primary-foreground px-4'>
-        <div className='mx-auto '>
+        <div className='mx-auto'>
           <h2 className='font-bold ~text-[2rem]/[3rem]'>What we do</h2>
           <p className='~text-lg/2xl ~mt-2/4'>
             We are a two person team focused on helping small businesses with
             their UX and development needs.
           </p>
-          <p className='~text-lg/2xl'>
+          <p className='~text-lg/2xl ~mt-1/2'>
             Whether you are looking for direction on your current site, or you
             need to create something completely new, Lost Yeti Design Company is
             here to help you on your journey.
           </p>
           <div className='flex flex-col md:space-y-0 space-y-16 md:space-x-16 md:flex-row items-center md:justify-center mt-16'>
-            <div className='border  max-w-[364px]'>
+            <div className='border  max-w-[364px] ~space-y-2/4'>
               <Image alt={''} src={ux} width={320} height={355} />
               <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UX design</h3>
-              <p className='~text-lg/2xl ~mt-2/4'>
+              <p className='~text-lg/2xl'>
                 From design audits and user testing to full development ready
                 mock-ups, our UX designer is ready to help your business put
                 it’s best foot forward.
               </p>
             </div>
-            <div className='border max-w-[364px]'>
+            <div className='border max-w-[364px] ~space-y-2/4'>
               <Image alt={''} src={ui} width={324} height={355} />
               <h3 className='font-bold ~text-[1.5rem]/[2rem] '>
                 UI development
               </h3>
-              <p className='~text-lg/2xl ~mt-2/4'>
+              <p className='~text-lg/2xl'>
                 From design audits and user testing to full development ready
                 mock-ups, our UX designer is ready to help your business put
                 it’s best foot forward.
@@ -93,8 +93,8 @@ export default function Home() {
       </section>
 
       <section className='w-full px-4'>
-        <div className='mx-auto'>
-          <div>
+        <div className='mx-auto flex flex-col md:flex-row-reverse gap-4 md:gap-16'>
+          <div className='flex-1'>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>
               Need help finding your way?
             </h2>
@@ -102,11 +102,11 @@ export default function Home() {
               Reach out to us using the contact form and we can help create
               custom road map to get you were you need to go!
             </p>
-            <Button variant={'cta'} className='px-8 h-10'>
+            <Button variant={'cta'} className='px-8 h-10 mt-8'>
               contact us
             </Button>
           </div>
-          <div>
+          <div className='flex-1'>
             <Image alt={''} src={computer} width={454} height={500} />
           </div>
         </div>
