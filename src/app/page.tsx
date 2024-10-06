@@ -161,10 +161,16 @@ export default function Home() {
           <h2 className='font-bold ~text-[2rem]/[3rem]'>Our work</h2>
           <p className='~text-lg/2xl ~mt-2/4'>Check out some past projects!</p>
 
-          <div>
-            <div>
-              <Image src={work1} alt={''} height={456} width={550} />
-              <div>
+          <div className='~mt-8/16 ~space-y-16/32'>
+            <div className='flex flex-col gap-4 md:gap-32 md:flex-row'>
+              <Image
+                src={work1}
+                alt={''}
+                height={456}
+                width={550}
+                className='flex-1 w-full h-auto max-w-[280px] md:max-w-[550px]'
+              />
+              <div className='flex-1'>
                 {/* overline styles here */}
                 <p className='uppercase font-light ~text-sm/base'>
                   Re-design + sign-up optimzation
@@ -180,9 +186,15 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div>
-              <Image src={work2} alt={''} height={456} width={550} />
-              <div>
+            <div className='flex flex-col gap-4 md:gap-32 md:flex-row'>
+              <Image
+                src={work2}
+                alt={''}
+                height={456}
+                width={550}
+                className='flex-1 w-full h-auto max-w-[280px] md:max-w-[550px]'
+              />
+              <div className='flex-1'>
                 {/* overline styles here */}
                 <p className='uppercase font-light ~text-sm/base'>
                   Full site construction
@@ -197,9 +209,15 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div>
-              <Image src={work3} alt={''} height={456} width={550} />
-              <div>
+            <div className='flex flex-col gap-4 md:gap-32 md:flex-row'>
+              <Image
+                src={work3}
+                alt={''}
+                height={456}
+                width={550}
+                className='flex-1 w-full h-auto max-w-[280px] md:max-w-[550px]'
+              />
+              <div className='flex-1'>
                 {/* overline styles here */}
                 <p className='uppercase font-light ~text-sm/base'>
                   Interactive feature design{' '}
