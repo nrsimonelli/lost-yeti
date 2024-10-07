@@ -29,7 +29,7 @@ const rubik = Rubik({
 export default function Home() {
   return (
     <main className='flex flex-col items-center'>
-      <nav className='border w-full items-center justify-between inline-flex px-4'>
+      <nav className='w-full items-center justify-between inline-flex px-4'>
         <Image src={nav} alt={''} height={62} width={200} />
         <Button variant={'cta'} className='px-8 h-10'>
           contact us
@@ -69,7 +69,7 @@ export default function Home() {
             here to help you on your journey.
           </p>
           <div className='flex flex-col md:space-y-0 space-y-16 md:space-x-16 md:flex-row items-center md:justify-center mt-16'>
-            <div className='border  max-w-[364px] ~space-y-2/4'>
+            <div className='max-w-[364px] ~space-y-2/4'>
               <Image alt={''} src={ux} width={320} height={355} />
               <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UX design</h3>
               <p className='~text-lg/2xl'>
@@ -78,7 +78,7 @@ export default function Home() {
                 it’s best foot forward.
               </p>
             </div>
-            <div className='border max-w-[364px] ~space-y-2/4'>
+            <div className='max-w-[364px] ~space-y-2/4'>
               <Image alt={''} src={ui} width={324} height={355} />
               <h3 className='font-bold ~text-[1.5rem]/[2rem] '>
                 UI development
@@ -122,7 +122,7 @@ export default function Home() {
               website made from scratch--we can help!
             </p>
           </div>
-          <div className='flex-col ~my-8/16 flex md:items-start items-center justify-center md:flex-row flex-wrap ~gap-8/16 *:border'>
+          <div className='flex-col ~my-8/16 flex md:items-start items-center justify-center md:flex-row flex-wrap ~gap-8/16'>
             <div className='max-w-[250px]'>
               <Image src={service1} alt={''} height={262} width={250} />
               <h4 className='text-center font-bold ~text-lg/2xl ~mt-2/4'>
@@ -239,7 +239,7 @@ export default function Home() {
       </section>
       <section className='w-full px-4 bg-accent text-accent-foreground'>
         {/* call out card */}
-        <div className='mx-auto p-4 shadow-callout rounded-2xl bg-background text-foreground'>
+        <div className='mx-auto p-4 shadow-callout border-2 border-foreground rounded-2xl bg-background text-foreground'>
           <div className='inline-flex w-full gap-4 items-center'>
             <p className='font-bold'>LOST YETI</p>
             {/* THREE BARS EHRE */}

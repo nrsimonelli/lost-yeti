@@ -85,7 +85,7 @@
   } */
 
   section > div {
-    @apply max-w-screen-lg border;
+    @apply max-w-screen-lg;
   }
   main > * + * {
     @apply ~py-16/40;
