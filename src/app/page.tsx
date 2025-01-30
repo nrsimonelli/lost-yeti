@@ -29,15 +29,17 @@ const rubik = Rubik({
 export default function Home() {
   return (
     <main className='flex flex-col items-center'>
-      <nav className='w-full items-center justify-between inline-flex px-4'>
+      <nav className='w-full items-center justify-between inline-flex px-4 shadow-md bg-white z-10'>
         <Image src={nav} alt={''} height={62} width={200} />
         <Button variant={'cta'} className='px-8 h-10'>
           contact us
         </Button>
       </nav>
-      <section className='w-full px-4'>
-        <div className='mx-auto flex flex-col'>
-          <div className='py-8 px-4'>
+      <section className='w-full relative border-b-8 border-secondary bg-[#fafafa] p-0 m-0 ~pt-8/16 xl:pt-0 xl:h-[600px] flex justify-center min-w-full'>
+        {/* container */}
+        <div className='flex flex-col xl:flex-row w-full h-full flex-1 items-start xl:items-center xl:justify-center justify-start min-w-full'>
+          
+          <div className='py-8 px-4 xl:pl-16 flex-col flex flex-1 justify-center md:-mb-24 xl:mb-0'>
             <h1
               className={cn(
                 '~text-5xl/7xl font-bold font-rubik',
@@ -46,14 +48,24 @@ export default function Home() {
             >
               Step into our office...
             </h1>
-            <p className='~text-lg/2xl ~mt-4/8'>
+            <p className='~text-lg/2xl ~mt-4/8 xl:max-w-[600px] md:max-w-[440px]'>
               Lost Yeti is here to help you find your way in the world of web
               development
             </p>
           </div>
 
-          <Image alt={''} src={hero} width={600} height={650} />
+          <div className='flex flex-1 w-full shrink-0 justify-center md:justify-end ~-mb-16/32 xl:mb-0'>
+            <Image
+              alt={'hero image'}
+              src={hero}
+              width={654}
+              height={627}
+              className='xl:absolute xl:-bottom-16 xl:right-8 md:right-0 ~max-w-[26rem]/[40.875rem] ~max-h-[25rem]/[39.25rem]'
+            />
+          </div>
+
         </div>
+
       </section>
 
       <section className='w-full bg-primary text-primary-foreground px-4'>
@@ -93,7 +105,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full px-4'>
+      <section className='w-full px-4 relative'>
+        <div className='overflow-hidden h-[150px]'>
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute w-full -top-1 left-0 right-0 bg-primary -z-10'>
+            <path className='fill-background stroke-none' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+          </svg>
+        </div>
+        
         <div className='mx-auto flex flex-col md:flex-row-reverse gap-4 md:gap-16'>
           <div className='flex-1'>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>
@@ -110,6 +128,12 @@ export default function Home() {
           <div className='flex-1'>
             <Image alt={''} src={computer} width={454} height={500} />
           </div>
+        </div>
+
+        <div className='overflow-hidden h-[150px]'>
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute w-full -bottom-1 left-0 right-0'>
+            <path className='fill-secondary stroke-none' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+          </svg>
         </div>
       </section>
 
@@ -270,15 +294,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer>
+      <footer className='w-full px-4 lg:px-0 border-t-8 border-secondary flex flex-col justify-start pt-8'>
         {/* footer content */}
-
-        <div>
-          <Image src={footer} alt={''} height={173} width={246} />
+        <div className='flex max-w-screen-lg mx-auto flex-col gap-8 md:gap-0 items-center md:items-center md:justify-between w-full md:flex-row'>
+          <Image src={footer} alt={''} height={173} width={246} className='' />
           <p>
             Contact us: <a>lostyetidesignco@gmail.com</a>
           </p>
-          <Button variant={'cta'} className='px-8 h-10'>
+          <Button variant={'cta'} className='px-8 h-10 w-full md:w-auto'>
             contact us
           </Button>
         </div>
