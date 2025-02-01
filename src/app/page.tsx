@@ -14,6 +14,7 @@ import work3 from '@/assets/work-league.png'
 import callout from '@/assets/dial-up.png'
 import footer from '@/assets/footer.png'
 import nav from '@/assets/nav-logo.png'
+import waveYeti from '@/assets/wave-yeti-1440.png'
 
 import { Rubik } from 'next/font/google'
 import { CrossCircledIcon } from '@radix-ui/react-icons'
@@ -80,25 +81,23 @@ export default function Home() {
             need to create something completely new, Lost Yeti Design Company is
             here to help you on your journey.
           </p>
-          <div className='flex flex-col md:space-y-0 space-y-16 md:space-x-16 md:flex-row items-center md:justify-center mt-16'>
-            <div className='max-w-[364px] ~space-y-2/4'>
-              <Image alt={''} src={ux} width={320} height={355} />
+          <div className='flex flex-col md:space-y-0 space-y-16 md:space-x-16 md:flex-row items-center md:items-start md:justify-center mt-16'>
+            <div className='max-w-[364px] ~space-y-2/4 flex-1'>
+              <Image alt={'Portrait of a UX designer'} src={ux} width={320} height={355} />
               <h3 className='font-bold ~text-[1.5rem]/[2rem]'>UX design</h3>
               <p className='~text-lg/2xl'>
                 From design audits and user testing to full development ready
                 mock-ups, our UX designer is ready to help your business put
-                it’s best foot forward.
+                its best foot forward.
               </p>
             </div>
-            <div className='max-w-[364px] ~space-y-2/4'>
-              <Image alt={''} src={ui} width={324} height={355} />
+            <div className='max-w-[364px] ~space-y-2/4 flex-1'>
+              <Image alt={'Portrait of a UI developer'} src={ui} width={324} height={355} />
               <h3 className='font-bold ~text-[1.5rem]/[2rem] '>
                 UI development
               </h3>
               <p className='~text-lg/2xl'>
-                From design audits and user testing to full development ready
-                mock-ups, our UX designer is ready to help your business put
-                it’s best foot forward.
+                Whether you are working with a blank slate or a feature heavy application, our UI developer is ready to build your dream site.
               </p>
             </div>
           </div>
@@ -107,11 +106,10 @@ export default function Home() {
 
       <section className='w-full px-4 relative'>
         <div className='overflow-hidden h-[150px]'>
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute w-full -top-1 left-0 right-0 bg-primary -z-10'>
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute w-full top-0 overflow-hidden left-0 right-0 bg-primary -z-10'>
             <path className='fill-background stroke-none' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
           </svg>
         </div>
-        
         <div className='mx-auto flex flex-col md:flex-row-reverse gap-4 md:gap-16'>
           <div className='flex-1'>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>
@@ -137,7 +135,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full bg-secondary text-secondary-foreground px-4'>
+      <section className='w-full bg-secondary text-secondary-foreground px-4 ~pb-32/80'>
         <div className='mx-auto'>
           <div>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>Services</h2>
@@ -181,8 +179,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full bg-accent text-accent-foreground px-4'>
-        <div className='mx-auto'>
+
+
+      <section className='w-full bg-accent text-accent-foreground relative px-4 z-50'>
+        <div className='mx-auto z-40 bg-transparent'>
+        <div className='h-auto w-full absolute top-0 left-0 -z-10 overflow-y-hidden -translate-y-1/4 bg-transparent'>
+          <Image 
+            src={waveYeti}
+            height={720}
+            width={1440}
+            alt={'Lost yeti floating on a wave'}
+            className='w-full bottom-0'
+          />
+        </div>
           <h2 className='font-bold ~text-[2rem]/[3rem]'>Our work</h2>
           <p className='~text-lg/2xl ~mt-2/4'>Check out some past projects!</p>
 
