@@ -104,12 +104,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full px-4 relative'>
-        <div className='overflow-hidden h-[150px]'>
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute w-full top-0 overflow-hidden left-0 right-0 bg-primary -z-10'>
+      <section className='w-full px-4 relative overflow-hidden'>
+        {/* <div className='overflow-hidden h-[150px] absolute border-red-500 border w-full'> */}
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute top-0 -translate-y-1/4 overflow-hidden right-0 bg-primary -z-10'>
             <path className='fill-background stroke-none' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
           </svg>
-        </div>
+        {/* </div> */}
+
         <div className='mx-auto flex flex-col md:flex-row-reverse gap-4 md:gap-16'>
           <div className='flex-1'>
             <h2 className='font-bold ~text-[2rem]/[3rem]'>
@@ -117,7 +118,7 @@ export default function Home() {
             </h2>
             <p className='~text-lg/2xl ~mt-2/4'>
               Reach out to us using the contact form and we can help create
-              custom road map to get you were you need to go!
+              custom road map to get you where you need to go!
             </p>
             <Button variant={'cta'} className='px-8 h-10 mt-8'>
               contact us
@@ -128,11 +129,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='overflow-hidden h-[150px]'>
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute w-full -bottom-1 left-0 right-0'>
+        {/* <div className='overflow-hidden h-[150px] absolute border-red-500 border w-full'> */}
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute -bottom-1 right-0 -z-10 translate-y-1/4'>
             <path className='fill-secondary stroke-none' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
           </svg>
-        </div>
+        {/* </div> */}
       </section>
 
       <section className='w-full bg-secondary text-secondary-foreground px-4 ~pb-32/80'>
