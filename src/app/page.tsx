@@ -104,12 +104,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full px-4 relative overflow-hidden'>
-        {/* <div className='overflow-hidden h-[150px] absolute border-red-500 border w-full'> */}
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute top-0 -translate-y-1/4 overflow-hidden right-0 bg-primary -z-10'>
-            <path className='fill-background stroke-none' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+      <section className='w-full px-4 relative z-10'>
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute top-0 -translate-y-1/4 overflow-none right-0 bg-primary -z-30'>
+            <path className='fill-background stroke-black stroke-[3px]' strokeDasharray={'505 795'} strokeLinecap='square' strokeDashoffset={'0'} d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
           </svg>
-        {/* </div> */}
 
         <div className='mx-auto flex flex-col md:flex-row-reverse gap-4 md:gap-16'>
           <div className='flex-1'>
@@ -124,16 +122,14 @@ export default function Home() {
               contact us
             </Button>
           </div>
-          <div className='flex-1'>
-            <Image alt={''} src={computer} width={454} height={500} />
+          <div className='flex flex-1 relative md:min-h-[410px] min-h-[240px] h-full md:-z-20 mt-8 md:mt-0'>
+            <Image alt={'Yeti smiling infront of a retro computer'} src={computer} width={618} height={558} className='absolute top-0 min-w-[300px] min-h-[270px] md:min-w-[500px] md:h-[450px] lg:min-w-[500px] lg:h-[450px] xl:h-[558px] xl:min-w-[618px] md:top-0 md:right-0 -z-10 h-full w-auto' />
           </div>
         </div>
 
-        {/* <div className='overflow-hidden h-[150px] absolute border-red-500 border w-full'> */}
           <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute -bottom-1 right-0 -z-10 translate-y-1/4'>
-            <path className='fill-secondary stroke-none' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+            <path className='fill-secondary stroke-black stroke-[3px]' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" strokeDasharray={'505 795'} strokeLinecap='square' strokeDashoffset={'0'}></path>
           </svg>
-        {/* </div> */}
       </section>
 
       <section className='w-full bg-secondary text-secondary-foreground px-4 ~pb-32/80'>
