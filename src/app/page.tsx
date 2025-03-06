@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       <section className='w-full px-4 relative z-10'>
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute top-0 -translate-y-1/4 overflow-none right-0 bg-primary -z-30'>
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute top-0 -translate-y-1/4 overflow-none right-0 bg-primary -z-30 w-full'>
             <path className='fill-background stroke-black stroke-[3px]' strokeDasharray={'505 795'} strokeLinecap='square' strokeDashoffset={'0'} d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
           </svg>
 
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
 
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute -bottom-1 right-0 -z-10 translate-y-1/4'>
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='absolute -bottom-1 right-0 -z-10 translate-y-1/4 w-full'>
             <path className='fill-secondary stroke-black stroke-[3px]' d="M0.00,49.98 C262.42,117.92 266.08,1.48 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" strokeDasharray={'505 795'} strokeLinecap='square' strokeDashoffset={'0'}></path>
           </svg>
       </section>
@@ -294,7 +294,7 @@ export default function Home() {
                 create a custom proposal that works for your needs.
               </p>
               <Button variant={'cta'} className='px-8 h-10 ~mt-4/8'>
-                Contact us
+                contact us
               </Button>
             </div>
           </div>
