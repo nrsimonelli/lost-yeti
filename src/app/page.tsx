@@ -40,10 +40,10 @@ export default function Home() {
         />
         <ContactButton className='px-8 h-10'>contact us</ContactButton>
       </nav>
-      <section className='w-full relative border-b-8 border-secondary bg-[#fafafa] p-0 m-0 ~pt-8/16 xl:pt-0 xl:h-[40rem] flex justify-center min-w-full'>
+      <section className='w-full relative border-b-8 border-[#0F8B8D] bg-[#fafafa] p-0 m-0 ~pt-8/16 xl:pt-0 xl:h-[40rem] flex justify-center min-w-full'>
         {/* container */}
-        <div className='flex flex-col xl:flex-row w-full h-full flex-1 items-start xl:items-center xl:justify-center justify-start min-w-full relative xl:max-w-[1156px] xl:w-full'>
-          <div className='py-8 px-4 xl:pl-16 flex-col flex flex-1 justify-center md:-mb-24 xl:mb-0'>
+        <div className='flex flex-col xl:flex-row w-full h-full flex-1 items-start xl:items-center xl:min-w-0 xl:justify-center justify-start min-w-full relative xl:max-w-[1156px] xl:w-full'>
+          <div className='py-8 px-4 xl:pl-0 flex-col flex flex-1 justify-center md:-mb-24 xl:mb-0'>
             <h1
               className={cn(
                 '~text-5xl/7xl font-bold font-rubik',
@@ -57,13 +57,13 @@ export default function Home() {
               development
             </p>
           </div>
-          <div className='flex flex-1 w-full shrink-0 justify-center md:justify-end ~-mb-16/32 xl:mb-0'>
+          <div className='flex flex-1 w-full shrink-0 justify-center md:justify-end ~-mb-16/32 xl:mb-0 xl:pr-0'>
             <Image
               alt={'hero image'}
               src={hero}
               width={600}
               height={586}
-              className='xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-8 md:right-0 ~max-w-[26rem]/[37.5rem] ~max-h-[25rem]/[36.625rem]'
+              className='xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-0 md:right-0 ~max-w-[26rem]/[37.5rem] ~max-h-[25rem]/[36.625rem]'
             />
           </div>
         </div>
@@ -345,12 +345,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className='w-full px-4 lg:px-0 border-t-8 border-secondary flex flex-col justify-start pt-8'>
+      <footer className='w-full px-4 lg:px-0 border-t-8 border-[#0F8B8D] flex flex-col justify-start pt-8'>
         {/* footer content */}
         <div className='flex max-w-screen-lg mx-auto flex-col gap-8 md:gap-0 items-center md:items-center md:justify-between w-full md:flex-row'>
           <Image src={footer} alt={''} height={173} width={246} className='' />
           <p>
-            Contact us: <a>lostyetidesignco@gmail.com</a>
+            <span className='font-bold'>Contact us: </span>
+            <a className='underline' href='mailto:lostyetidesignco@gmail.com'>
+              lostyetidesignco@gmail.com
+            </a>
           </p>
           <ContactButton className='px-8 h-10 w-full md:w-auto'>
             Contact us
