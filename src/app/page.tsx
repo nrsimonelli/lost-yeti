@@ -40,7 +40,7 @@ export default function Home() {
         />
         <ContactButton className='px-8 h-10'>contact us</ContactButton>
       </nav>
-      <section className='w-full relative border-b-8 border-[#0F8B8D] bg-[#fafafa] p-0 m-0 ~pt-8/16 xl:pt-0 xl:h-[40rem] flex justify-center min-w-full'>
+      <section className='w-full relative border-b-8 border-[#0F8B8D] bg-[#fafafa] p-0 m-0 ~pt-8/16 xl:pt-0 min-h-[min(80vh,30rem)] xl:min-h-0 xl:h-[40rem] flex justify-center min-w-full'>
         {/* container */}
         <div className='flex flex-col xl:flex-row w-full h-full flex-1 items-start xl:items-center xl:min-w-0 xl:justify-center justify-start min-w-full relative xl:max-w-[1156px] xl:w-full'>
           <div className='py-8 px-4 xl:pl-0 flex-col flex flex-1 justify-center md:-mb-24 xl:mb-0'>
@@ -57,13 +57,13 @@ export default function Home() {
               development
             </p>
           </div>
-          <div className='flex flex-1 w-full shrink-0 justify-center md:justify-end ~-mb-16/32 xl:mb-0 xl:pr-0'>
+          <div className='flex flex-1 w-full shrink-0 justify-center md:justify-end mb-1 md:~-mb-16/32 xl:mb-0 xl:pr-0'>
             <Image
               alt={'hero image'}
               src={hero}
               width={600}
               height={586}
-              className='xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-0 md:right-0 ~max-w-[26rem]/[37.5rem] ~max-h-[25rem]/[36.625rem]'
+              className='xl:absolute xl:top-1/2 xl:-translate-y-1/2 xl:right-0 md:right-0 max-w-[min(85vw,15rem)] max-h-[min(52vh,16rem)] md:max-w-[26rem] md:max-h-[25rem] xl:max-w-[37.5rem] xl:max-h-[36.625rem]'
             />
           </div>
         </div>
@@ -231,7 +231,7 @@ export default function Home() {
               height={407}
               width={507}
               alt='Yeti on a flamingo floating device'
-              className='absolute right-0 -translate-x-1/3 top-0 object-contain w-[300px] h-[200px] lg:w-[407px] lg:h-[307px] xl:w-[507px] xl:h-[407px] z-0'
+              className='absolute right-0 -translate-x-1/3 top-0 object-contain w-[150px] h-[100px] md:w-[300px] md:h-[200px] lg:w-[407px] lg:h-[307px] xl:w-[507px] xl:h-[407px] z-0'
             />
           </div>
           <h2 className='font-bold ~text-[2rem]/[3rem]'>Our work</h2>
